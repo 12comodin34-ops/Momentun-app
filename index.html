@@ -495,6 +495,30 @@ function renderStats() {
     : '<div class="empty">Aún no hay actividad este mes.</div>';
 }
 function renderCategories() {
+  document.getElementById("categoryList").innerHTML =
+    data.categories.map(name => {
+      const safeName = encodeURIComponent(name).replace(/'/g, "%27");
+      return `<div class="category">
+        <span class="category-name">${escapeHTML(name)}</span>
+        <div class="category-actions">
+          <button class="secondary"
+            onclick="renameCategory(decodeURIComponent('${safeName}'))">
+            EDITAR
+          </button>
+          <button class="secondary"
+            onclick="deleteCategory(decodeURIComponent('${safeName}'))">
+            ×
+          </button>
+        </div>
+      </div>`;
+    }).join("") || '<div class="empty">Aún no tienes categorías.</div>';
+
+  document.getElementById("categorySelect").innerHTML =
+    data.categories.map(name =>
+      `<option value="${escapeHTML(name)}">${escapeHTML(name)}</option>`
+    ).join("");
+}
+  {
   document.getElementById("categoryList").innerHTML=data.categories.map(name=>
     `<div class="category">
       <span class="category-name">${escapeHTML(name)}</span>
