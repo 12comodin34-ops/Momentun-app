@@ -8,128 +8,154 @@
 <title>momentum_</title>
 <style>
 :root {
-  --turquoise: #00C5C5;
-  --purple: #5732A5;
-  --lavender: #D9D0F4;
-  --ice: #E8F5F3;
-  --ink: #22213A;
-  --white: #FFFFFF;
-  --line: #22213A;
+  --turquoise:#00C5C5;
+  --purple:#5732A5;
+  --lavender:#D9D0F4;
+  --ice:#E8F5F3;
+  --ink:#22213A;
+  --white:#FFFFFF;
 }
-* { box-sizing: border-box; }
+* { box-sizing:border-box; }
 body {
-  margin: 0;
-  background: var(--ice);
-  color: var(--ink);
-  font-family: "Trebuchet MS", Arial, sans-serif;
-  padding-bottom: 90px;
+  margin:0;
+  background:var(--ice);
+  color:var(--ink);
+  font-family:"Trebuchet MS",Arial,sans-serif;
+  padding-bottom:90px;
 }
-button, input, select { font: inherit; }
-button { cursor: pointer; color: inherit; }
+button,input,select { font:inherit; }
+button { cursor:pointer; color:inherit; }
 .top {
-  background: var(--turquoise);
-  padding: 22px 18px 18px;
-  border-bottom: 3px solid var(--ink);
+  background:var(--turquoise);
+  padding:22px 18px 18px;
+  border-bottom:3px solid var(--ink);
 }
 .brand {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 25px;
-  font-weight: 900;
-  letter-spacing: -1.5px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:25px;
+  font-weight:900;
+  letter-spacing:-1.5px;
 }
-.brand span { color: var(--purple); }
+.brand span:first-child { color:var(--purple); }
 .date {
-  font: 12px monospace;
-  margin-top: 8px;
-  text-transform: uppercase;
+  font:12px monospace;
+  margin-top:8px;
+  text-transform:uppercase;
 }
-main { max-width: 650px; margin: auto; padding: 16px; }
+main { max-width:650px; margin:auto; padding:16px; }
 .window {
-  border: 2px solid var(--ink);
-  background: var(--white);
-  box-shadow: 4px 4px 0 var(--ink);
-  margin-bottom: 18px;
+  border:2px solid var(--ink);
+  background:var(--white);
+  box-shadow:4px 4px 0 var(--ink);
+  margin-bottom:18px;
 }
 .window-title {
-  background: var(--purple);
-  color: white;
-  padding: 9px 12px;
-  font: bold 12px monospace;
-  display: flex;
-  justify-content: space-between;
+  background:var(--purple);
+  color:white;
+  padding:9px 12px;
+  font:bold 12px monospace;
+  display:flex;
+  justify-content:space-between;
 }
-.window-body { padding: 16px; }
+.window-body { padding:16px; }
 .points {
-  background: var(--turquoise);
-  text-align: center;
-  padding: 22px 12px;
-  border: 2px solid var(--ink);
-  margin-bottom: 18px;
+  background:var(--turquoise);
+  text-align:center;
+  padding:22px 12px;
+  border:2px solid var(--ink);
+  margin-bottom:18px;
 }
-.points small { font: 12px monospace; text-transform: uppercase; }
+.points small { font:12px monospace; text-transform:uppercase; }
 .points strong {
-  display: block;
-  font-size: 64px;
-  line-height: 1.1;
-  letter-spacing: -4px;
+  display:block;
+  font-size:64px;
+  line-height:1.1;
+  letter-spacing:-4px;
 }
-.points p { margin: 5px 0 0; font-size: 13px; }
-h2 { font-size: 19px; margin: 0 0 14px; }
-h3 { font-size: 15px; margin: 0 0 10px; }
+.points p { margin:5px 0 0; font-size:13px; }
+h2 { font-size:19px; margin:0 0 14px; }
+h3 { font-size:15px; margin:0 0 10px; }
 label {
-  display: block;
-  font: 11px monospace;
-  text-transform: uppercase;
-  margin: 12px 0 6px;
+  display:block;
+  font:11px monospace;
+  text-transform:uppercase;
+  margin:12px 0 6px;
 }
-input, select {
-  width: 100%;
-  padding: 12px;
-  border: 2px solid var(--ink);
-  border-radius: 0;
-  background: white;
-  color: var(--ink);
+input,select {
+  width:100%;
+  padding:12px;
+  border:2px solid var(--ink);
+  border-radius:0;
+  background:white;
+  color:var(--ink);
 }
 .primary {
-  width: 100%;
-  margin-top: 14px;
-  padding: 13px;
-  border: 2px solid var(--ink);
-  background: var(--purple);
-  color: white;
-  font-weight: bold;
-  box-shadow: 3px 3px 0 var(--ink);
+  width:100%;
+  margin-top:14px;
+  padding:13px;
+  border:2px solid var(--ink);
+  background:var(--purple);
+  color:white;
+  font-weight:bold;
+  box-shadow:3px 3px 0 var(--ink);
 }
-.primary:active { transform: translate(2px,2px); box-shadow: 1px 1px 0 var(--ink); }
+.primary:active {
+  transform:translate(2px,2px);
+  box-shadow:1px 1px 0 var(--ink);
+}
 .secondary {
-  border: 2px solid var(--ink);
-  background: var(--lavender);
-  padding: 8px 10px;
-  font-size: 12px;
-  font-weight: bold;
+  border:2px solid var(--ink);
+  background:var(--lavender);
+  padding:8px 10px;
+  font-size:12px;
+  font-weight:bold;
 }
-.target-row { display:flex; justify-content:space-between; gap:10px; align-items:center; }
-.target-row strong { font: bold 13px monospace; }
+.target-row {
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  align-items:center;
+}
+.target-row strong { font:bold 13px monospace; }
 .progress {
-  height: 13px;
-  border: 2px solid var(--ink);
-  background: var(--ice);
-  margin-top: 10px;
+  height:13px;
+  border:2px solid var(--ink);
+  background:var(--ice);
+  margin-top:10px;
 }
-.progress-fill { height:100%; background:var(--purple); width:0%; }
+.progress-fill {
+  height:100%;
+  background:var(--purple);
+  width:0%;
+}
 .muted { color:#666477; font-size:12px; }
 .record {
-  border-bottom: 1px solid #c9c7d3;
-  padding: 12px 0;
+  border-bottom:1px solid #c9c7d3;
+  padding:12px 0;
 }
 .record:last-child { border:0; }
-.record-head { display:flex; justify-content:space-between; gap:8px; }
+.record-head {
+  display:flex;
+  justify-content:space-between;
+  gap:8px;
+}
 .record-name { font-weight:bold; font-size:14px; }
-.record-meta { font:11px monospace; color:#666477; margin-top:5px; }
-.record-actions { display:flex; gap:6px; margin-top:8px; }
-.record-actions button { font-size:11px; padding:5px 8px; }
+.record-meta {
+  font:11px monospace;
+  color:#666477;
+  margin-top:5px;
+}
+.record-actions,.category-actions {
+  display:flex;
+  gap:6px;
+}
+.record-actions { margin-top:8px; }
+.record-actions button,.category-actions button {
+  font-size:11px;
+  padding:6px 8px;
+}
 .pill {
   display:inline-block;
   background:var(--lavender);
@@ -147,9 +173,11 @@ input, select {
 }
 .category:last-child { border:0; }
 .category-name { font-weight:bold; font-size:14px; }
-.category-actions { display:flex; gap:5px; }
-.category-actions button { padding:6px; font-size:11px; }
-.stat-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.stat-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
 .stat {
   background:var(--ice);
   border:2px solid var(--ink);
@@ -159,12 +187,14 @@ input, select {
 .stat small { font:10px monospace; text-transform:uppercase; }
 .nav {
   position:fixed;
-  bottom:0; left:0; right:0;
+  bottom:0;
+  left:0;
+  right:0;
   display:flex;
   background:var(--ink);
   border-top:3px solid var(--turquoise);
   z-index:5;
-  padding:7px 4px max(7px, env(safe-area-inset-bottom));
+  padding:7px 4px max(7px,env(safe-area-inset-bottom));
 }
 .nav button {
   flex:1;
@@ -179,28 +209,64 @@ input, select {
   color:var(--ink);
   font-weight:bold;
 }
-.nav button span { display:block; font-size:18px; margin-bottom:3px; }
+.nav button span {
+  display:block;
+  font-size:18px;
+  margin-bottom:3px;
+}
 .page { display:none; }
 .page.active { display:block; }
-.empty { text-align:center; padding:22px 8px; color:#666477; font-size:13px; }
-.week-days { display:flex; justify-content:space-between; gap:4px; margin-top:14px; }
-.day { flex:1; text-align:center; font:10px monospace; }
+.empty {
+  text-align:center;
+  padding:22px 8px;
+  color:#666477;
+  font-size:13px;
+}
+.week-days {
+  display:flex;
+  justify-content:space-between;
+  gap:4px;
+  margin-top:14px;
+}
+.day {
+  flex:1;
+  text-align:center;
+  font:10px monospace;
+}
 .day b {
-  display:block; margin:5px auto 0; width:25px; height:25px;
-  line-height:25px; background:var(--ice); border:1px solid var(--ink);
+  display:block;
+  margin:5px auto 0;
+  width:25px;
+  height:25px;
+  line-height:25px;
+  background:var(--ice);
+  border:1px solid var(--ink);
 }
 .day b.done { background:var(--turquoise); }
-.month-title { display:flex; justify-content:space-between; align-items:center; gap:8px; }
-.month-title button { border:2px solid var(--ink); background:var(--lavender); padding:5px 10px; }
-@media (min-width:600px) {
+.month-title {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:8px;
+}
+.month-title button {
+  border:2px solid var(--ink);
+  background:var(--lavender);
+  padding:5px 10px;
+}
+@media(min-width:600px) {
   main { padding:24px; }
-  .top { padding-left:max(22px, calc((100% - 610px)/2)); }
+  .top { padding-left:max(22px,calc((100% - 610px)/2)); }
 }
 </style>
 </head>
+
 <body>
 <header class="top">
-  <div class="brand">momentum<span>_</span><span style="font-size:12px;color:#22213A;letter-spacing:0">v 0.1</span></div>
+  <div class="brand">
+    momentum<span>_</span>
+    <span style="font-size:12px;color:#22213A;letter-spacing:0">v 0.2</span>
+  </div>
   <div class="date" id="todayDate"></div>
 </header>
 
@@ -213,7 +279,9 @@ input, select {
     </div>
 
     <div class="window">
-      <div class="window-title"><span>OBJETIVO_SEMANAL.EXE</span><span>_ □ ×</span></div>
+      <div class="window-title">
+        <span>OBJETIVO_SEMANAL.EXE</span><span>_ □ ×</span>
+      </div>
       <div class="window-body">
         <div class="target-row">
           <h3>Tu ritmo semanal</h3>
@@ -223,25 +291,34 @@ input, select {
           <span class="muted" id="targetText">0 de 10 puntos</span>
           <strong id="targetPercent">0%</strong>
         </div>
-        <div class="progress"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="progress">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
         <div class="week-days" id="weekDays"></div>
       </div>
     </div>
 
     <div class="window">
-      <div class="window-title"><span>NUEVO_REGISTRO.EXE</span><span>_ □ ×</span></div>
+      <div class="window-title">
+        <span>NUEVO_REGISTRO.EXE</span><span>_ □ ×</span>
+      </div>
       <div class="window-body">
         <h2>¿Qué has hecho hoy?</h2>
         <label for="categorySelect">Categoría</label>
         <select id="categorySelect"></select>
         <label for="description">Descripción</label>
-        <input id="description" maxlength="100" placeholder="Ej. He avanzado con un diseño...">
-        <button class="primary" onclick="addRecord()">+ REGISTRAR ACTIVIDAD</button>
+        <input id="description" maxlength="100"
+          placeholder="Ej. He avanzado con un diseño...">
+        <button class="primary" onclick="addRecord()">
+          + REGISTRAR ACTIVIDAD
+        </button>
       </div>
     </div>
 
     <div class="window">
-      <div class="window-title"><span>ULTIMOS_REGISTROS.TXT</span><span>_ □ ×</span></div>
+      <div class="window-title">
+        <span>ULTIMOS_REGISTROS.TXT</span><span>_ □ ×</span>
+      </div>
       <div class="window-body">
         <div id="recentRecords"></div>
       </div>
@@ -250,7 +327,9 @@ input, select {
 
   <section class="page" id="history">
     <div class="window">
-      <div class="window-title"><span>HISTORIAL.DAT</span><span>_ □ ×</span></div>
+      <div class="window-title">
+        <span>HISTORIAL.DAT</span><span>_ □ ×</span>
+      </div>
       <div class="window-body">
         <h2>Tu recorrido</h2>
         <div class="month-title">
@@ -265,14 +344,28 @@ input, select {
 
   <section class="page" id="stats">
     <div class="window">
-      <div class="window-title"><span>ESTADISTICAS.EXE</span><span>_ □ ×</span></div>
+      <div class="window-title">
+        <span>ESTADISTICAS.EXE</span><span>_ □ ×</span>
+      </div>
       <div class="window-body">
         <h2>Tu actividad</h2>
         <div class="stat-grid">
-          <div class="stat"><strong id="monthPoints">0</strong><small>Puntos este mes</small></div>
-          <div class="stat"><strong id="monthSessions">0</strong><small>Sesiones este mes</small></div>
-          <div class="stat"><strong id="allPoints">0</strong><small>Puntos totales</small></div>
-          <div class="stat"><strong id="allSessions">0</strong><small>Sesiones totales</small></div>
+          <div class="stat">
+            <strong id="monthPoints">0</strong>
+            <small>Puntos este mes</small>
+          </div>
+          <div class="stat">
+            <strong id="monthSessions">0</strong>
+            <small>Sesiones este mes</small>
+          </div>
+          <div class="stat">
+            <strong id="allPoints">0</strong>
+            <small>Puntos totales</small>
+          </div>
+          <div class="stat">
+            <strong id="allSessions">0</strong>
+            <small>Sesiones totales</small>
+          </div>
         </div>
         <h3 style="margin-top:20px">Por categorías · este mes</h3>
         <div id="categoryStats"></div>
@@ -282,272 +375,460 @@ input, select {
 
   <section class="page" id="categories">
     <div class="window">
-      <div class="window-title"><span>CATEGORIAS.SYS</span><span>_ □ ×</span></div>
+      <div class="window-title">
+        <span>CATEGORIAS.SYS</span><span>_ □ ×</span>
+      </div>
       <div class="window-body">
         <h2>Tus categorías</h2>
         <div id="categoryList"></div>
         <label for="newCategory">Nueva categoría</label>
-        <input id="newCategory" maxlength="30" placeholder="Nombre de la categoría">
-        <button class="primary" onclick="addCategory()">+ AÑADIR CATEGORÍA</button>
+        <input id="newCategory" maxlength="30"
+          placeholder="Nombre de la categoría">
+        <button class="primary" onclick="addCategory()">
+          + AÑADIR CATEGORÍA
+        </button>
       </div>
     </div>
+
     <div class="window">
-      <div class="window-title"><span>DATOS Y COPIAS</span><span>_ □ ×</span></div>
+      <div class="window-title">
+        <span>DATOS Y COPIAS</span><span>_ □ ×</span>
+      </div>
       <div class="window-body">
-        <p class="muted">Tus registros se guardan en este navegador. Puedes descargar una copia para conservarlos.</p>
-        <button class="secondary" onclick="exportData()">DESCARGAR COPIA DE SEGURIDAD</button>
+        <p class="muted">
+          Tus registros se guardan en este navegador.
+          Puedes descargar una copia para conservarlos.
+        </p>
+        <button class="secondary" onclick="exportData()">
+          DESCARGAR COPIA DE SEGURIDAD
+        </button>
       </div>
     </div>
   </section>
 </main>
 
 <nav class="nav">
-  <button class="active" onclick="showPage('home',this)"><span>⌂</span>HOY</button>
-  <button onclick="showPage('history',this)"><span>▤</span>HISTORIAL</button>
-  <button onclick="showPage('stats',this)"><span>▦</span>DATOS</button>
-  <button onclick="showPage('categories',this)"><span>⚙</span>CATEGORÍAS</button>
+  <button class="active" onclick="showPage('home',this)">
+    <span>⌂</span>HOY
+  </button>
+  <button onclick="showPage('history',this)">
+    <span>▤</span>HISTORIAL
+  </button>
+  <button onclick="showPage('stats',this)">
+    <span>▦</span>DATOS
+  </button>
+  <button onclick="showPage('categories',this)">
+    <span>⚙</span>CATEGORÍAS
+  </button>
 </nav>
 
 <script>
 const KEY = "momentum_data_v1";
+
 const initial = {
-  target: 10,
-  categories: ["Bizarra00","Fotografía","Aprendizaje","Hogar","Personal","Gestiones"],
-  records: []
+  target:10,
+  categories:[
+    "Bizarra00",
+    "Fotografía",
+    "Aprendizaje",
+    "Hogar",
+    "Personal",
+    "Gestiones"
+  ],
+  records:[]
 };
+
 let data;
+
 try {
-  data = JSON.parse(localStorage.getItem(KEY)) || initial;
-} catch(e) {
+  const saved = JSON.parse(localStorage.getItem(KEY));
+  data = saved && typeof saved === "object" ? saved : initial;
+} catch(error) {
   data = initial;
 }
+
+if(!Array.isArray(data.categories)) data.categories = initial.categories.slice();
+if(!Array.isArray(data.records)) data.records = [];
+if(!Number.isFinite(Number(data.target))) data.target = 10;
+
 let historyOffset = 0;
 
 function save() {
-  localStorage.setItem(KEY, JSON.stringify(data));
+  localStorage.setItem(KEY,JSON.stringify(data));
 }
-function dateKey(date = new Date()) {
+
+function dateKey(date=new Date()) {
   const d = new Date(date);
-  return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+  return d.getFullYear()+"-"+
+    String(d.getMonth()+1).padStart(2,"0")+"-"+
+    String(d.getDate()).padStart(2,"0");
 }
+
 function parseDate(key) {
   const [y,m,d] = key.split("-").map(Number);
   return new Date(y,m-1,d);
 }
+
 function monday(date) {
   const d = new Date(date);
   d.setHours(0,0,0,0);
-  d.setDate(d.getDate() - ((d.getDay()+6)%7));
+  d.setDate(d.getDate()-((d.getDay()+6)%7));
   return d;
 }
+
 function weekRecords(offset=0) {
   const start = monday(new Date());
   start.setDate(start.getDate()+offset*7);
   const end = new Date(start);
   end.setDate(end.getDate()+7);
+
   return data.records.filter(r => {
-    const d=parseDate(r.date);
+    const d = parseDate(r.date);
     return d>=start && d<end;
   });
 }
+
 function formatDate(key) {
-  return parseDate(key).toLocaleDateString("es-ES",{day:"2-digit",month:"short"});
+  return parseDate(key).toLocaleDateString("es-ES",{
+    day:"2-digit",
+    month:"short"
+  });
 }
+
 function escapeHTML(value) {
-  return String(value).replace(/[&<>"']/g, c => ({
-    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+  return String(value).replace(/[&<>"']/g,c => ({
+    "&":"&amp;",
+    "<":"&lt;",
+    ">":"&gt;",
+    '"':"&quot;",
+    "'":"&#39;"
   })[c]);
 }
+
 function showPage(id,button) {
-  document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
+  document.querySelectorAll(".page").forEach(p=>{
+    p.classList.remove("active");
+  });
   document.getElementById(id).classList.add("active");
-  document.querySelectorAll(".nav button").forEach(b=>b.classList.remove("active"));
+
+  document.querySelectorAll(".nav button").forEach(b=>{
+    b.classList.remove("active");
+  });
   button.classList.add("active");
   render();
 }
+
 function addRecord() {
-  const category=document.getElementById("categorySelect").value;
-  const description=document.getElementById("description").value.trim();
-  if(!category) { alert("Añade primero una categoría."); return; }
-  if(!description) { alert("Escribe una pequeña descripción."); return; }
+  const category = document.getElementById("categorySelect").value;
+  const description = document.getElementById("description").value.trim();
+
+  if(!category) {
+    alert("Añade primero una categoría.");
+    return;
+  }
+
+  if(!description) {
+    alert("Escribe una pequeña descripción.");
+    return;
+  }
+
   data.records.push({
     id:Date.now().toString(),
     date:dateKey(),
     category,
     description
   });
+
   document.getElementById("description").value="";
-  save(); render();
+  save();
+  render();
 }
+
 function changeTarget() {
-  const value=prompt("¿Cuántos puntos quieres como objetivo semanal?",data.target);
+  const value = prompt(
+    "¿Cuántos puntos quieres como objetivo semanal?",
+    data.target
+  );
+
   if(value===null) return;
-  const n=parseInt(value,10);
-  if(!Number.isFinite(n)||n<1||n>999) { alert("Introduce un número entre 1 y 999."); return; }
-  data.target=n; save(); render();
+
+  const n = parseInt(value,10);
+
+  if(!Number.isFinite(n)||n<1||n>999) {
+    alert("Introduce un número entre 1 y 999.");
+    return;
+  }
+
+  data.target=n;
+  save();
+  render();
 }
+
 function addCategory() {
-  const input=document.getElementById("newCategory");
-  const name=input.value.trim();
-  if(!name) return;
+  const input = document.getElementById("newCategory");
+  const name = input.value.trim();
+
+  if(!name) {
+    alert("Escribe un nombre para la categoría.");
+    return;
+  }
+
   if(data.categories.some(c=>c.toLowerCase()===name.toLowerCase())) {
-    alert("Esa categoría ya existe."); return;
+    alert("Esa categoría ya existe.");
+    return;
   }
+
   data.categories.push(name);
-  input.value=""; save(); render();
+  input.value="";
+  save();
+  render();
 }
+
 function renameCategory(oldName) {
-  const name=prompt("Nuevo nombre para la categoría:",oldName);
+  const name = prompt("Nuevo nombre para la categoría:",oldName);
+
   if(name===null || !name.trim()) return;
-  const clean=name.trim();
-  if(data.categories.some(c=>c.toLowerCase()===clean.toLowerCase() && c!==oldName)) {
-    alert("Ya existe una categoría con ese nombre."); return;
+
+  const clean = name.trim();
+
+  if(data.categories.some(c=>
+    c.toLowerCase()===clean.toLowerCase() && c!==oldName
+  )) {
+    alert("Ya existe una categoría con ese nombre.");
+    return;
   }
-  data.categories=data.categories.map(c=>c===oldName?clean:c);
-  data.records.forEach(r=>{if(r.category===oldName) r.category=clean;});
-  save(); render();
+
+  data.categories = data.categories.map(c=>
+    c===oldName ? clean : c
+  );
+
+  data.records.forEach(r=>{
+    if(r.category===oldName) r.category=clean;
+  });
+
+  save();
+  render();
 }
+
 function deleteCategory(name) {
-  if(!confirm('¿Eliminar "'+name+'"? Los registros antiguos se conservarán.')) return;
-  data.categories=data.categories.filter(c=>c!==name);
-  save(); render();
+  if(!confirm(
+    '¿Eliminar "'+name+'"? Los registros antiguos se conservarán.'
+  )) return;
+
+  data.categories = data.categories.filter(c=>c!==name);
+  save();
+  render();
 }
+
 function editRecord(id) {
-  const r=data.records.find(x=>x.id===id);
+  const r = data.records.find(x=>x.id===id);
   if(!r) return;
-  const description=prompt("Editar descripción:",r.description);
+
+  const description = prompt("Editar descripción:",r.description);
+
   if(description===null || !description.trim()) return;
+
   r.description=description.trim();
-  save(); render();
+  save();
+  render();
 }
+
 function deleteRecord(id) {
   if(!confirm("¿Eliminar este registro?")) return;
+
   data.records=data.records.filter(r=>r.id!==id);
-  save(); render();
+  save();
+  render();
 }
+
+/* Gestión de botones mediante eventos: evita errores con comillas. */
+document.addEventListener("click",function(event) {
+  const button = event.target.closest("button[data-action]");
+  if(!button) return;
+
+  const action = button.dataset.action;
+  const name = button.dataset.name;
+  const id = button.dataset.id;
+
+  if(action==="rename-category") renameCategory(name);
+  if(action==="delete-category") deleteCategory(name);
+  if(action==="edit-record") editRecord(id);
+  if(action==="delete-record") deleteRecord(id);
+});
+
 function recordHTML(r) {
-  return `<div class="record">
-    <div class="record-head">
-      <div><div class="record-name">${escapeHTML(r.description)}</div>
-      <div class="record-meta">${escapeHTML(r.category)} · ${formatDate(r.date)}</div></div>
-      <span class="pill">+1</span>
+  return `
+    <div class="record">
+      <div class="record-head">
+        <div>
+          <div class="record-name">${escapeHTML(r.description)}</div>
+          <div class="record-meta">
+            ${escapeHTML(r.category)} · ${formatDate(r.date)}
+          </div>
+        </div>
+        <span class="pill">+1</span>
+      </div>
+      <div class="record-actions">
+        <button class="secondary"
+          data-action="edit-record"
+          data-id="${escapeHTML(r.id)}">EDITAR</button>
+        <button class="secondary"
+          data-action="delete-record"
+          data-id="${escapeHTML(r.id)}">ELIMINAR</button>
+      </div>
     </div>
-    <div class="record-actions">
-      <button class="secondary" onclick="editRecord('${r.id}')">EDITAR</button>
-      <button class="secondary" onclick="deleteRecord('${r.id}')">ELIMINAR</button>
-    </div>
-  </div>`;
+  `;
 }
+
 function renderHome() {
-  const records=weekRecords();
-  const points=records.length;
+  const records = weekRecords();
+  const points = records.length;
+
   document.getElementById("weekPoints").textContent=points;
-  document.getElementById("targetText").textContent=points+" de "+data.target+" puntos";
-  const percent=Math.min(100,Math.round(points/data.target*100));
+  document.getElementById("targetText").textContent=
+    points+" de "+data.target+" puntos";
+
+  const percent = Math.min(100,Math.round(points/data.target*100));
+
   document.getElementById("targetPercent").textContent=percent+"%";
   document.getElementById("progressFill").style.width=percent+"%";
+
   const start=monday(new Date());
   const names=["L","M","X","J","V","S","D"];
+
   document.getElementById("weekDays").innerHTML=names.map((n,i)=>{
-    const d=new Date(start); d.setDate(d.getDate()+i);
+    const d=new Date(start);
+    d.setDate(d.getDate()+i);
     const key=dateKey(d);
     const done=records.some(r=>r.date===key);
-    return `<div class="day">${n}<b class="${done?"done":""}">${d.getDate()}</b></div>`;
+
+    return `
+      <div class="day">${n}
+        <b class="${done?"done":""}">${d.getDate()}</b>
+      </div>
+    `;
   }).join("");
+
   document.getElementById("recentRecords").innerHTML=
     data.records.length
     ? [...data.records].reverse().slice(0,5).map(recordHTML).join("")
     : '<div class="empty">Todavía no hay registros.<br>Tu primer paso puede empezar hoy.</div>';
 }
+
 function renderHistory() {
   const records=weekRecords(historyOffset);
   const start=monday(new Date());
+
   start.setDate(start.getDate()+historyOffset*7);
-  const end=new Date(start); end.setDate(end.getDate()+6);
+
+  const end=new Date(start);
+  end.setDate(end.getDate()+6);
+
   document.getElementById("historyWeekTitle").textContent=
     formatDate(dateKey(start))+" — "+formatDate(dateKey(end));
-  document.getElementById("historyRecords").innerHTML=records.length
+
+  document.getElementById("historyRecords").innerHTML=
+    records.length
     ? [...records].reverse().map(recordHTML).join("")
     : '<div class="empty">No hay registros en esta semana.</div>';
 }
+
 function changeHistoryWeek(amount) {
   historyOffset+=amount;
   if(historyOffset>0) historyOffset=0;
   renderHistory();
 }
+
 function renderStats() {
   const now=new Date();
+
   const month=data.records.filter(r=>{
     const d=parseDate(r.date);
-    return d.getFullYear()===now.getFullYear() && d.getMonth()===now.getMonth();
+    return d.getFullYear()===now.getFullYear() &&
+      d.getMonth()===now.getMonth();
   });
+
   document.getElementById("monthPoints").textContent=month.length;
   document.getElementById("monthSessions").textContent=month.length;
   document.getElementById("allPoints").textContent=data.records.length;
   document.getElementById("allSessions").textContent=data.records.length;
+
   const counts={};
-  month.forEach(r=>counts[r.category]=(counts[r.category]||0)+1);
+
+  month.forEach(r=>{
+    counts[r.category]=(counts[r.category]||0)+1;
+  });
+
   document.getElementById("categoryStats").innerHTML=
     Object.keys(counts).length
-    ? Object.entries(counts).sort((a,b)=>b[1]-a[1]).map(([name,count])=>
-      `<div class="category"><span class="category-name">${escapeHTML(name)}</span><span class="pill">${count} puntos</span></div>`
-    ).join("")
+    ? Object.entries(counts)
+      .sort((a,b)=>b[1]-a[1])
+      .map(([name,count])=>`
+        <div class="category">
+          <span class="category-name">${escapeHTML(name)}</span>
+          <span class="pill">${count} puntos</span>
+        </div>
+      `).join("")
     : '<div class="empty">Aún no hay actividad este mes.</div>';
 }
+
+/* Función corregida de categorías */
 function renderCategories() {
   document.getElementById("categoryList").innerHTML =
-    data.categories.map(name => {
-      const safeName = encodeURIComponent(name).replace(/'/g, "%27");
-      return `<div class="category">
+    data.categories.map(name=>`
+      <div class="category">
         <span class="category-name">${escapeHTML(name)}</span>
         <div class="category-actions">
           <button class="secondary"
-            onclick="renameCategory(decodeURIComponent('${safeName}'))">
+            data-action="rename-category"
+            data-name="${escapeHTML(name)}">
             EDITAR
           </button>
           <button class="secondary"
-            onclick="deleteCategory(decodeURIComponent('${safeName}'))">
+            data-action="delete-category"
+            data-name="${escapeHTML(name)}">
             ×
           </button>
         </div>
-      </div>`;
-    }).join("") || '<div class="empty">Aún no tienes categorías.</div>';
+      </div>
+    `).join("") ||
+    '<div class="empty">Aún no tienes categorías.</div>';
 
   document.getElementById("categorySelect").innerHTML =
-    data.categories.map(name =>
-      `<option value="${escapeHTML(name)}">${escapeHTML(name)}</option>`
-    ).join("");
+    data.categories.map(name=>`
+      <option value="${escapeHTML(name)}">${escapeHTML(name)}</option>
+    `).join("");
 }
-  {
-  document.getElementById("categoryList").innerHTML=data.categories.map(name=>
-    `<div class="category">
-      <span class="category-name">${escapeHTML(name)}</span>
-      <div class="category-actions">
-        <button class="secondary" onclick="renameCategory(${JSON.stringify(name)})">EDITAR</button>
-        <button class="secondary" onclick="deleteCategory(${JSON.stringify(name)})">×</button>
-      </div>
-    </div>`
-  ).join("") || '<div class="empty">Aún no tienes categorías.</div>';
-  document.getElementById("categorySelect").innerHTML=data.categories.map(name=>
-    `<option value="${escapeHTML(name)}">${escapeHTML(name)}</option>`
-  ).join("");
-}
+
 function exportData() {
-  const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});
+  const blob=new Blob(
+    [JSON.stringify(data,null,2)],
+    {type:"application/json"}
+  );
+
   const url=URL.createObjectURL(blob);
   const a=document.createElement("a");
-  a.href=url; a.download="momentum-copia-"+dateKey()+".json";
-  a.click(); URL.revokeObjectURL(url);
+
+  a.href=url;
+  a.download="momentum-copia-"+dateKey()+".json";
+  a.click();
+
+  setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
+
 function render() {
   renderCategories();
   renderHome();
   renderHistory();
   renderStats();
 }
+
 document.getElementById("todayDate").textContent=
-  new Date().toLocaleDateString("es-ES",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+  new Date().toLocaleDateString("es-ES",{
+    weekday:"long",
+    day:"numeric",
+    month:"long",
+    year:"numeric"
+  });
+
 render();
-</script>
-</body>
-</html>
